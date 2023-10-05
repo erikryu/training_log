@@ -1,0 +1,31 @@
+Training log program
+
+tenho três variáveis:
+load, reps, sets. - todas essas variáveis são inteiros.
+
+essas 3 variáveis são a tribuídas a cada exercício.
+um conjunto de exercícios é atribuído um treino.
+e cada treino é atribuído uma data uma data.
+
+programa pega essas informações, passa para um arquivo JSON, para que depois de um certo tempo essas informações possam ser interpretadas em números.x
+
+forma do arquivo json.
+
+treino:{
+	Nome:"treino A"
+	data:"dd-mm-aa"
+	exercícios: {
+		1:{
+			carga:x,
+			repetição:y,
+			séries:z
+			},
+		2:{
+			carga:x,
+			repetição:y,
+			séries:z
+			}
+		}
+	}
+
+por enquanto é um formato simples, depois quero acrescentar a opção de apontar observações, tempo de descanso, formato da séries, infromações sobre o indivíduo(se comeu bem, médio ou mal, se dormiu bem, médio ou mal).
