@@ -4,5 +4,6 @@
 2º abrir e nomear arquivo
 */
 main(){
-	return 0;
+	int carga, reps;		
+	
 }
