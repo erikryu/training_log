@@ -3,6 +3,7 @@
 
 int main()
 {
+	int c;
 	FILE *fp;
 	time_t t = time(NULL);
 	struct tm date = *localtime(&t);
@@ -10,8 +11,14 @@ int main()
 	char dateTime[200];
 	strftime(dateTime, 200, "%c", &date);
 
-	fp = fopen("tests.txt", "w");
+	fp = fopen("tests.txt", "a");
 	fputs(dateTime, fp);
+
+	putc('\n', fp);
+
+	while ((c=getchar())!=EOF)
+		putc(c, fp);
+
 	fclose(fp);
 /*
 Tenho que fazer o programa ler entrada e salvar em um arquivo de texto(feito)
