@@ -27,6 +27,4 @@ int get_time(char dt[]){
 	struct tm date = *localtime(&t);
 	
 	strftime(dt, 200, "%c", &date);
-
-	return &dt;
 }
